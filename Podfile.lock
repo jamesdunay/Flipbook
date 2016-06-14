@@ -1,0 +1,46 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - FXBlurView (1.6.4)
+  - HexColors (3.1.1)
+  - MD360Player4iOS (0.1.0)
+  - ObjectiveSugar (1.1.0)
+  - PureLayout (3.0.1)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.0)
+  - FXBlurView
+  - HexColors (~> 3.0)
+  - MD360Player4iOS (~> 0.1.0)
+  - ObjectiveSugar
+  - PureLayout (~> 3.0)
+  - SDWebImage (~> 3.7)
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  FXBlurView: db786c2561cb49a09ae98407f52460096ab8a44f
+  HexColors: d837cebe691e52c867d401ecd2374111add5445f
+  MD360Player4iOS: e550d0374387c43cb9afc7c80b6b507ba2bd6e5e
+  ObjectiveSugar: a6a25f23d657c19df0a0b972466d5b5ca9f5295c
+  PureLayout: f35f5384c9c4e4479df041dbe33ad7577b71ddfb
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+
+PODFILE CHECKSUM: 4b4ac39512401a013dbfa946081a7646bad1771e
+
+COCOAPODS: 1.0.1
