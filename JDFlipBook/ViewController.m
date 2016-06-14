@@ -27,6 +27,7 @@
     dummyLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     self.collectionView = [[JDFlipBookCollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:dummyLayout];
     self.collectionView.videos = [self videoObjectsFromPayload:payload];
+    self.collectionView.backgroundColor = [UIColor colorWithWhite:.88 alpha:1];
     [self.view addSubview:self.collectionView];
     
     __weak typeof(self) weakSelf = self;

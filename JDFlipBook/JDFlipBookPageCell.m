@@ -85,10 +85,10 @@ static CGFloat kBaseMargin = 20.;
 - (void)layoutSubviews
 {
     self.container.layer.shadowPath = [[UIBezierPath bezierPathWithRect:self.container.bounds] CGPath];
-    self.container.layer.shadowRadius = 25;
-    self.container.layer.shadowOffset = CGSizeMake(35, 0);
+    self.container.layer.shadowRadius = 10;
+    self.container.layer.shadowOffset = CGSizeMake(35, 25);
     self.container.layer.shadowColor = [[UIColor blackColor] CGColor];
-    self.container.layer.shadowOpacity = .6;
+    self.container.layer.shadowOpacity = .1;
 
     [super layoutSubviews];
 }
