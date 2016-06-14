@@ -15,6 +15,13 @@
 		1A34FEB81D0F2A7500F30094 /* JDFlipBookCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A34FEB71D0F2A7500F30094 /* JDFlipBookCollectionView.m */; };
 		1A34FEBB1D0F2F4500F30094 /* JDFlipBookPageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A34FEBA1D0F2F4500F30094 /* JDFlipBookPageCell.m */; };
 		1A6A519C1D0F7A07000D0640 /* JDMettaVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A519B1D0F7A07000D0640 /* JDMettaVideo.m */; };
+		1AE95A171D107371007D140E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AE95A0D1D107371007D140E /* Assets.xcassets */; };
+		1AE95A181D107371007D140E /* GLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE95A0F1D107371007D140E /* GLProgram.m */; };
+		1AE95A191D107371007D140E /* HTY360PlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE95A111D107371007D140E /* HTY360PlayerVC.m */; };
+		1AE95A1A1D107371007D140E /* HTY360PlayerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AE95A121D107371007D140E /* HTY360PlayerVC.xib */; };
+		1AE95A1B1D107371007D140E /* HTYGLKVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE95A141D107371007D140E /* HTYGLKVC.m */; };
+		1AE95A1C1D107371007D140E /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 1AE95A151D107371007D140E /* Shader.fsh */; };
+		1AE95A1D1D107371007D140E /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 1AE95A161D107371007D140E /* Shader.vsh */; };
 		4BA0B40A3DE6A4DB1AD830A1 /* libPods-JDFlipBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1788717D26F3AF0B96A1C3 /* libPods-JDFlipBook.a */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +43,16 @@
 		1A6A51931D0F3672000D0640 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		1A6A519A1D0F7A07000D0640 /* JDMettaVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMettaVideo.h; sourceTree = "<group>"; };
 		1A6A519B1D0F7A07000D0640 /* JDMettaVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMettaVideo.m; sourceTree = "<group>"; };
+		1AE95A0D1D107371007D140E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = HTY360Player/Assets.xcassets; sourceTree = "<group>"; };
+		1AE95A0E1D107371007D140E /* GLProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLProgram.h; path = HTY360Player/GLProgram.h; sourceTree = "<group>"; };
+		1AE95A0F1D107371007D140E /* GLProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GLProgram.m; path = HTY360Player/GLProgram.m; sourceTree = "<group>"; };
+		1AE95A101D107371007D140E /* HTY360PlayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTY360PlayerVC.h; path = HTY360Player/HTY360PlayerVC.h; sourceTree = "<group>"; };
+		1AE95A111D107371007D140E /* HTY360PlayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTY360PlayerVC.m; path = HTY360Player/HTY360PlayerVC.m; sourceTree = "<group>"; };
+		1AE95A121D107371007D140E /* HTY360PlayerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HTY360PlayerVC.xib; path = HTY360Player/HTY360PlayerVC.xib; sourceTree = "<group>"; };
+		1AE95A131D107371007D140E /* HTYGLKVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTYGLKVC.h; path = HTY360Player/HTYGLKVC.h; sourceTree = "<group>"; };
+		1AE95A141D107371007D140E /* HTYGLKVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTYGLKVC.m; path = HTY360Player/HTYGLKVC.m; sourceTree = "<group>"; };
+		1AE95A151D107371007D140E /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = HTY360Player/Shader.fsh; sourceTree = "<group>"; };
+		1AE95A161D107371007D140E /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = HTY360Player/Shader.vsh; sourceTree = "<group>"; };
 		AA1788717D26F3AF0B96A1C3 /* libPods-JDFlipBook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JDFlipBook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F6394EAB70009C7665E229 /* Pods-JDFlipBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JDFlipBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-JDFlipBook/Pods-JDFlipBook.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,6 +91,7 @@
 		1A34FE9E1D0F2A2F00F30094 /* JDFlipBook */ = {
 			isa = PBXGroup;
 			children = (
+				1AE95A0C1D107364007D140E /* 360VideoPlayer */,
 				1A34FEA21D0F2A2F00F30094 /* AppDelegate.h */,
 				1A34FEA31D0F2A2F00F30094 /* AppDelegate.m */,
 				1A34FEA51D0F2A2F00F30094 /* ViewController.h */,
@@ -98,6 +116,23 @@
 				1A34FEA01D0F2A2F00F30094 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1AE95A0C1D107364007D140E /* 360VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				1AE95A0D1D107371007D140E /* Assets.xcassets */,
+				1AE95A0E1D107371007D140E /* GLProgram.h */,
+				1AE95A0F1D107371007D140E /* GLProgram.m */,
+				1AE95A101D107371007D140E /* HTY360PlayerVC.h */,
+				1AE95A111D107371007D140E /* HTY360PlayerVC.m */,
+				1AE95A121D107371007D140E /* HTY360PlayerVC.xib */,
+				1AE95A131D107371007D140E /* HTYGLKVC.h */,
+				1AE95A141D107371007D140E /* HTYGLKVC.m */,
+				1AE95A151D107371007D140E /* Shader.fsh */,
+				1AE95A161D107371007D140E /* Shader.vsh */,
+			);
+			name = 360VideoPlayer;
 			sourceTree = "<group>";
 		};
 		3A07C0ED500D92BE15DA2AD7 /* Frameworks */ = {
@@ -178,7 +213,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A34FEAF1D0F2A2F00F30094 /* LaunchScreen.storyboard in Resources */,
+				1AE95A171D107371007D140E /* Assets.xcassets in Resources */,
+				1AE95A1D1D107371007D140E /* Shader.vsh in Resources */,
 				1A34FEAC1D0F2A2F00F30094 /* Assets.xcassets in Resources */,
+				1AE95A1A1D107371007D140E /* HTY360PlayerVC.xib in Resources */,
+				1AE95A1C1D107371007D140E /* Shader.fsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,12 +276,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AE95A181D107371007D140E /* GLProgram.m in Sources */,
 				1A34FEB81D0F2A7500F30094 /* JDFlipBookCollectionView.m in Sources */,
 				1A6A519C1D0F7A07000D0640 /* JDMettaVideo.m in Sources */,
 				1A34FEA71D0F2A2F00F30094 /* ViewController.m in Sources */,
 				1A34FEBB1D0F2F4500F30094 /* JDFlipBookPageCell.m in Sources */,
 				1A34FEA41D0F2A2F00F30094 /* AppDelegate.m in Sources */,
 				1A34FEA11D0F2A2F00F30094 /* main.m in Sources */,
+				1AE95A191D107371007D140E /* HTY360PlayerVC.m in Sources */,
+				1AE95A1B1D107371007D140E /* HTYGLKVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +392,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JD.JDFlipBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = /Users/James/Documents/Code/JDFlipBook/HTY360Player;
 			};
 			name = Debug;
 		};
@@ -363,6 +406,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JD.JDFlipBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = /Users/James/Documents/Code/JDFlipBook/HTY360Player;
 			};
 			name = Release;
 		};

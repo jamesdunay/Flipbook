@@ -22,7 +22,7 @@
 
         self.previewImageURLString = data[@"previewSrc"];
         self.ownerName = data[@"owner_data"][@"name"];
-        self.hdVideoData = data[@"copies"][@"original"];
+        self.hdVideoString = data[@"copies"][@"original"][@"url"];
     }
     return self;
 }

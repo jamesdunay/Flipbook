@@ -17,7 +17,7 @@
 @property (nonatomic, strong) NSString *title;
 
 @property (nonatomic, strong) NSNumber *likesCount;
-@property (nonatomic, strong) NSDictionary *hdVideoData;
+@property (nonatomic, strong) NSString *hdVideoString;
 
 - (instancetype)initWithData:(NSDictionary *)data;
 

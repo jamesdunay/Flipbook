@@ -11,9 +11,6 @@
 #import "JDFlipBookCollectionView.h"
 #import "HTY360PlayerVC.h"
 
-@import AVKit;
-@import AVFoundation;
-
 @interface ViewController ()
 @property (nonatomic, strong) JDFlipBookCollectionView *collectionView;
 @end
@@ -25,29 +22,24 @@
     [super viewDidLoad];
     
     NSArray *payload = [self jsonFromURL:[NSURL URLWithString:@"http://www.mettavr.com/api/codingChallengeData"]];
-    
+
     UICollectionViewFlowLayout *dummyLayout = [UICollectionViewFlowLayout new];
     dummyLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     self.collectionView = [[JDFlipBookCollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:dummyLayout];
     self.collectionView.videos = [self videoObjectsFromPayload:payload];
     [self.view addSubview:self.collectionView];
     
-    
+    __weak typeof(self) weakSelf = self;
     [self.collectionView setSelectedVideo:^(JDMettaVideo *video) {
-        
+        [weakSelf playVideo:video];
     }];
 }
 
 - (void)playVideo:(JDMettaVideo *)video
 {
-    
-    
-//    []
-//    
-//    AVPlayerItem *playerItem = [[AVPlayerItem alloc] initWithURL:self.mURL];
-//    [self.player setPlayerItem:playerItem];
-//    [self.player play];
-    
+    NSURL *videoUrl = [NSURL URLWithString:video.hdVideoString];
+    HTY360PlayerVC *playerVC = [[HTY360PlayerVC alloc] initWithNibName:@"HTY360PlayerVC" bundle:nil url:videoUrl];
+    [self.navigationController presentViewController:playerVC animated:YES completion:nil];
 }
 
 - (NSArray *)jsonFromURL:(NSURL *)url
@@ -73,7 +65,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-
 }
 
 @end

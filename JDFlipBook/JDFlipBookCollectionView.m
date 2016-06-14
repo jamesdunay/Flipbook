@@ -58,7 +58,7 @@ static CGFloat kCellWidth = 80.;
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"Selected Item : %@", indexPath);
+    self.selectedVideo(self.videos[[self currentItemIndex]]);
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -78,7 +78,6 @@ static CGFloat kCellWidth = 80.;
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-
     // can add dampeners here depending on touch location to better match iOS functionality
 
     [self.indexPathsForVisibleItems each:^(NSIndexPath *indexPath) {
@@ -119,11 +118,15 @@ static CGFloat kCellWidth = 80.;
 {
     _videos = videos;
     [self reloadData];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self scrollViewDidScroll:self];
+    });
 }
 
 - (NSInteger)currentItemIndex
 {
-    return self.contentOffset.y / kCellWidth;
+    return self.contentOffset.x / kCellWidth;
 }
 
 @end
